@@ -8,6 +8,7 @@ WORKDIR /workspace
 RUN apk add --no-cache \
     bash \
     build-base \
+    cargo \
     curl \
     git \
     libffi-dev \
