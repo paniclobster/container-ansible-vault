@@ -20,6 +20,9 @@ RUN apk add --no-cache \
     openssl-dev \
     python3-dev
 
+# Upgrade pip
+RUN pip install --upgrade pip
+
 # Install pip dependencies
 ADD requirements.txt /workspace/
 RUN pip install --requirement /workspace/requirements.txt
