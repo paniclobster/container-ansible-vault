@@ -1,6 +1,9 @@
 # Base image
 FROM python:3.10.0-alpine
 
+# Update packages
+RUN apk update --no-cache
+
 # Workspace
 WORKDIR /workspace
 
