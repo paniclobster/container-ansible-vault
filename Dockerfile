@@ -1,5 +1,5 @@
 # Base image
-FROM python:3.11.0rc2-alpine
+FROM python:3.11.0-alpine
 
 # Update packages
 RUN apk upgrade --no-cache
